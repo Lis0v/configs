@@ -2,7 +2,7 @@
 
 ## Basic password protection
 
-Password protection, for proper working, requires:
+For proper working, password protection requires:
 <ul>
   <li>This block of code included in httpd.conf:
     
