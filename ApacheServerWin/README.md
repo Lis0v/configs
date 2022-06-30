@@ -39,6 +39,55 @@ LoadModule auth_basic_module modules/mod_auth_basic.so
   AuthUserFile /path/to/.htpasswd
   Require valid-user
   ```
-  </ul>
+</ul>
   
-  I think, that is it for password.
+I think, that is it for password.
+  
+## Fancy Indexing
+  
+For fancy indexing to work:
+<ul>
+  <li>autoindex module must be uncommented:
+
+  ```
+  LoadModule autoindex_module modules/mod_autoindex.so
+  ```
+  <li>line below must be included in .htaccess file:
+  
+  ```
+  IndexOptions FancyIndexing
+  ```  
+</ul>
+
+## Styling
+
+For styling, provide header.html and footer.html files in index directory and include them in .htaccess like so:
+  
+  ```
+  HeaderName header.html
+  ReadmeName footer.html
+  ```
+Then call style.css from header.
+  
+  
+Footer.html won't work unless you have these blocks of code in httpd.conf:
+<ul>
+<li>For public/unprotected directory:
+
+```
+<Directory /path/to/public/dir>
+  AllowOverride all
+  Require all granted
+</Directory>
+```
+</li>
+<li>For private/protected directory:
+
+```
+<Directory /path/to/private/dir/>
+  AllowOverride all
+  Require all denied
+</Directory>
+```
+</li>
+</ul>
