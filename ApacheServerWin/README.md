@@ -17,6 +17,12 @@ Password protection, for proper working, requires:
 
 Line above must be replaced with path to directory you want to protect by password.
 
+Also, auth_basic_module must be uncommented:
+
+```
+LoadModule auth_basic_module modules/mod_auth_basic.so
+```
+
   <li>.htpasswd created with htpasswd tool provided by Apache in bin folder. Password creation command:
   
   ```
