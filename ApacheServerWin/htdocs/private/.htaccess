@@ -1,7 +1,7 @@
 #Protect Directory
 AuthName "Password Required"
 AuthType Basic
-AuthUserFile C:/Apache24/htdocs/files/.htpasswd
+AuthUserFile C:/Apache24/htdocs/private/.htpasswd
 Require valid-user
 
 # SET INDEX OPTIONS
