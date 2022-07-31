@@ -1,0 +1,17 @@
+#Protect Directory
+AuthName "Password Required"
+AuthType Basic
+AuthUserFile C:/Apache24/htdocs/private/.htpasswd
+Require valid-user
+
+# SET INDEX OPTIONS
+IndexOptions FancyIndexing FoldersFirst NameWidth=* DescriptionWidth=*
+
+# SPECIFY HEADER FILE
+HeaderName header.html
+ 
+# SPECIFY FOOTER FILE
+ReadmeName footer.html
+
+# IGNORE THESE FILES
+IndexIgnore header.html footer.html favicon.ico .htaccess .ftpquota .DS_Store icons *.log *,v *,t .??* *~ *#

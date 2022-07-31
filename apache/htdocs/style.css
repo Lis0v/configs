@@ -1,0 +1,22 @@
+body {
+	font-family: Lucida Console;
+	background: #121212;
+	margin: 30px;
+	color: #e6e6e6;
+	}
+h1 a:hover, h1 a:active {
+	text-decoration: none;
+	}
+a:link {
+	text-decoration: none;
+	color: #009933;
+	}
+a:visited {
+	text-decoration: none;
+	color: #009933;
+	}
+a:hover, a:active {
+	text-decoration: underline;
+	color: #66ff33;
+	transition: all 0.25s ease;
+	}
