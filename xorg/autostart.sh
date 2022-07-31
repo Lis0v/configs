@@ -1,11 +1,11 @@
 #!/bin/sh
 while :
 do
-	# BATTERY
+	# BATTERY 
 	bat=$(cat /sys/class/power_supply/BAT1/capacity)
 	batstat=$(cat /sys/class/power_supply/BAT1/status | grep Charging)
 	[ -z "$batstat" ] && chargico=$(echo -e '\U26AB') || chargico=$(echo -e '\U1F7E2')
-	(( $bat < 15 )) && notify-send "low battery bruv"
+	(( $bat < 15 )) && [ -z "$batstat" ] && notify-send "low battery bruv"
 
 	# VOLUME
 	volstat=$(amixer | awk NR==5 | sed "s/] \[.*// ; s/.*\[//")
