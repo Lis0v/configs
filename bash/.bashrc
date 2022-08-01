@@ -15,4 +15,4 @@ PS1='\e[0;31m[\e[1;33m\u\e[0;35m@\e[0;32m\h \e[1;34m\W\e[0;31m]\e[0m$ '
 alias ls="ls --color=auto"
 alias ydp="yt-dlp -x --yes-playlist"
 alias e="nvim"
-alias cmt="git pull origin main ; git add --all ; git commit ; git push"
+alias cm="git pull origin main ; git add --all ; git commit ; git push"
