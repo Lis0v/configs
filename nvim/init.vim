@@ -10,4 +10,4 @@ noremap <Right> <Nop>
 
 :set tabstop=4
 :set shiftwidth=4
-:set expandtab
+:set noexpandtab
