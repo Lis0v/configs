@@ -1,5 +1,5 @@
 #!/bin/sh
-feh --bg-scale ~/media/pics/walls/421.jpg &
+feh --bg-scale ~/media/pics/walls/422.png &
 # picom &
 sh /home/umbro/.config/dwm/autostart.sh &
 dunst &
