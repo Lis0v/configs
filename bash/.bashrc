@@ -16,7 +16,6 @@ alias ls="ls --color=auto"
 alias ydp="yt-dlp -x --yes-playlist"
 alias e="nvim" # wszystko przez nvidie
 alias cm="git pull origin main ; git add --all ; git commit ; git push"
-alias mpv="mpv --volume=50"
 alias poweroff="sudo shutdown now"
 alias pd="dict -d fd-pol-deu"
 alias dp="dict -d fd-deu-pol"
