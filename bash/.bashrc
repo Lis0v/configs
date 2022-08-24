@@ -7,7 +7,7 @@
 
 set -o vi
 
-PATH="$PATH:/home/umbro/.local/bin"
+PATH="$PATH:/home/umbro/.local/bin/:/home/umbro/media/scripts/utils/"
 
 PS1='\[\e[0;31m\][\[\e[1;33m\]\u\[\e[0;35m\]@\[\e[0;32m\]\h \[\e[1;34m\]\W\[\e[0;31m\]]\[\e[0m\]$ '
 
@@ -20,3 +20,5 @@ alias poweroff="sudo shutdown now"
 alias pd="dict -d fd-pol-deu"
 alias dp="dict -d fd-deu-pol"
 alias proton="~/.local/share/Steam/steamapps/common/Proton\ -\ Experimental/files/bin/wine64"
+
+[ -f "/home/umbro/.ghcup/env" ] && source "/home/umbro/.ghcup/env" # ghcup-env
